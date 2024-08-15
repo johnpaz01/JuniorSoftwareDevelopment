@@ -1,0 +1,149 @@
+* {
+    font-family: 'Antonio', Antonio;
+    box-sizing: border-box;
+}
+
+.title {
+    width: 226px;
+    height: 53px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 380px) {
+    .title {
+        width: 226px;
+        height: 53px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .title {
+        width: 453px;
+        height: 106px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .title {
+        width: 906px;
+        height: 212px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+html, body {
+    height: 100%;
+    background-image: linear-gradient(to right, #252a3d, #2d5a9c);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* General Navbar Styling */
+.navbar {
+  display: flex; /* Makes navbar items display horizontally */
+  justify-content: space-between; /* Spreads items evenly */
+  align-items: center; /* Aligns items vertically in center */
+  background-color: #000000; /* Light gray background */
+  padding: 10px 20px; /* Adds padding around navbar items */
+}
+
+/* Styling for list items */
+.nav-list {
+  list-style: none; /* Removes default bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+/* Styling for individual navigation items */
+.nav-item {
+  margin-right: 15px; /* Adds margin between items */
+}
+
+/* Styling for navigation links */
+.nav-item a {
+  text-decoration: none; /* Removes underline from links */
+  color: #ffffff; /* Dark gray text color */
+  font-weight: bold; /* Makes text bold */
+}
+
+/* Styling for hover effect on links */
+.nav-item a:hover {
+  color: #000; /* Black text color on hover */
+  background-color: #ddd; /* Light gray background on hover */
+}
+
+/* Styling for dropdown menu (if needed) */
+.dropdown-content {
+  display: none; /* Hides dropdown content by default */
+  position: absolute; /* Positions dropdown below parent item */
+  background-color: #000000; /* Light gray background */
+  padding: 10px; /* Adds padding to dropdown content */
+  list-style: none; /* Removes default bullet points */
+}
+
+/* Shows dropdown menu on hover over parent item */
+.nav-item:hover .dropdown-content {
+  display: block; /* Shows dropdown content on hover */
+}
+
+/* Styling for dropdown link items */
+.dropdown-content a {
+  color: #000000; /* Dark gray text color */
+  font-weight: normal; /* Makes text regular weight */
+}
+
+/* Hover effect on dropdown link items */
+.dropdown-content a:hover {
+  color: #000; /* Black text color on hover */
+  background-color: #ddd; /* Light gray background on hover */
+}
+/* Remove o inline-block específico para o dropdown */
+.dropdown-content li {
+     display: block; /* Exibe os itens em blocos, um abaixo do outro */
+     margin: 5px 0; /* Adiciona um pequeno espaço entre os itens */
+    }
+    
+.dropdown-content a {
+ color: #ffffff; /* Cor do texto em cinza escuro */
+ font-weight: normal; /* Peso normal da fonte */
+ padding: 5px; /* Adiciona padding aos itens */
+ display: block; /* Garante que o link ocupe toda a largura do item */
+}
+
+.dropdown-content a:hover {
+ color: #000; /* Cor preta no hover */
+ background-color: #ddd; /* Cor de fundo cinza clara no hover */
+}
+    
