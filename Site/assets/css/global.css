@@ -11,6 +11,10 @@
     margin-right: auto;
 }
 
+.NavBarJSD{
+    height: 20px;
+}
+
 @media screen and (min-width: 380px) {
     .title {
         width: 226px;
