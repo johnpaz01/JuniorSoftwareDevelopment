@@ -81,6 +81,7 @@ a{
   align-items: center; /* Aligns items vertically in center */
   background-color: #000000; /* Light gray background */
   padding: 10px 20px; /* Adds padding around navbar items */
+  width: 100%;
 }
 
 /* Styling for list items */
