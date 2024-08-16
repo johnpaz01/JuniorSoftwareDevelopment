@@ -52,10 +52,22 @@ html, body {
     flex-direction: column;
 }
 
+.photo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 150px;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
 .footer {
+    background-color: #000000;
     padding: 1rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 100%;
 }
 
 ul {
@@ -151,4 +163,35 @@ a{
  color: #000; /* Cor preta no hover */
  background-color: #ddd; /* Cor de fundo cinza clara no hover */
 }
-    
+
+.button {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0.3rem;
+  background-color: #000000;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+.textcenter {
+  text-align: center;
+  
+}
+
+.textwhite {
+  color: #ffffff;
+}
+
+.textjustify{
+  text-align: justify;
+}
+
+.divcenter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
