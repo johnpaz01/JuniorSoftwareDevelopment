@@ -300,3 +300,118 @@ a{
 }
 
 /* Fim dos cards*/
+
+/* Estilo para texto que escreve sozinho*/
+
+.txt-animater{
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 4rem;
+font-weight: 300;
+background-color: #000;
+margin-top: 3rem;
+
+}
+
+.txt-animater span{
+
+position: relative;
+
+}
+
+.txt-animater span::before{
+
+  content: "";
+  color: rgb(214, 214, 214);
+  animation: FraseQuetal 20s infinite ;
+  right: -30px;
+}
+
+.txt-animater span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #fff;
+  right: -10px;
+  animation: cursor 0.8s infinite, digitando 20s steps(15) infinite;
+  width: calc(100% + 10px);
+  background-color: black ;
+
+}
+
+@keyframes digitando {
+
+  10%, 15%, 30%, 35%, 50%, 55%,70%, 75%, 90% ,95%{
+    width: 0;
+  }
+  5%, 20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 10px);
+  }
+
+}
+
+
+@keyframes cursor {
+  0%{
+    border-left: 2px solid #000000;
+  }
+  
+}
+
+@keyframes FraseQuetal {
+
+  0%,20%{
+    content: " agendarmos uma reunião?";
+  }
+  21%,40%{
+    content: " marcarmos um encontro?";
+  }
+  41%,60%{
+    content: " conversamos melhor?";
+  }
+  61%,80%{
+    content: " fecharmos um acordo?";
+  }
+  81%,100%{
+    content: " discutirmos os detalhes finais?";
+  }
+  
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .txt-animater {
+    font-size: 3rem; /* Reduz o tamanho da fonte para telas menores que 1200px */
+  }
+}
+
+@media (max-width: 992px) {
+  .txt-animater {
+    font-size: 2.5rem; /* Reduz ainda mais para telas menores que 992px */
+  }
+}
+
+@media (max-width: 768px) {
+  .txt-animater {
+    font-size: 2rem; /* Reduz o tamanho da fonte para telas menores que 768px */
+    margin-top: 2rem; /* Ajusta a margem para telas menores */
+  }
+}
+
+@media (max-width: 576px) {
+  .txt-animater {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte para telas menores que 576px */
+    margin-top: 1rem; /* Ajusta a margem para telas menores */
+  }
+}
+
+
+/* final do estilo para texto que escreve sozinho*/
+
+/* estilos para a galeria rotativa
+*/
+
