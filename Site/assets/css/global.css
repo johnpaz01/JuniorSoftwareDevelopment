@@ -195,3 +195,223 @@ a{
   margin: 0;
 }
 
+
+
+
+/* Estilo do contêiner de cards */
+
+.card-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Espaço entre os cards */
+  padding: 20px;
+}
+
+/* Estilo de cada card */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px; /* Espaço abaixo dos cards */
+}
+
+/* Imagem do card */
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Conteúdo do card */
+.card-content {
+  padding: 16px;
+}
+
+/* Título do card */
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+/* Descrição do card */
+.card-description {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Botão do card */
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .card-information {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-information {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+      font-size: 1.2em;
+  }
+
+  .card-description {
+      font-size: 0.9em;
+  }
+
+  .card-button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+}
+
+/* Fim dos cards*/
+
+/* Estilo para texto que escreve sozinho*/
+
+.txt-animater{
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 4rem;
+font-weight: 300;
+background-color: #000;
+margin-top: 3rem;
+
+}
+
+.txt-animater span{
+
+position: relative;
+
+}
+
+.txt-animater span::before{
+
+  content: "";
+  color: rgb(214, 214, 214);
+  animation: FraseQuetal 20s infinite ;
+  right: -30px;
+}
+
+.txt-animater span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #fff;
+  right: -10px;
+  animation: cursor 0.8s infinite, digitando 20s steps(15) infinite;
+  width: calc(100% + 10px);
+  background-color: black ;
+
+}
+
+@keyframes digitando {
+
+  10%, 15%, 30%, 35%, 50%, 55%,70%, 75%, 90% ,95%{
+    width: 0;
+  }
+  5%, 20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 10px);
+  }
+
+}
+
+
+@keyframes cursor {
+  0%{
+    border-left: 2px solid #000000;
+  }
+  
+}
+
+@keyframes FraseQuetal {
+
+  0%,20%{
+    content: " agendarmos uma reunião?";
+  }
+  21%,40%{
+    content: " marcarmos um encontro?";
+  }
+  41%,60%{
+    content: " conversamos melhor?";
+  }
+  61%,80%{
+    content: " fecharmos um acordo?";
+  }
+  81%,100%{
+    content: " discutirmos os detalhes finais?";
+  }
+  
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .txt-animater {
+    font-size: 3rem; /* Reduz o tamanho da fonte para telas menores que 1200px */
+  }
+}
+
+@media (max-width: 992px) {
+  .txt-animater {
+    font-size: 2.5rem; /* Reduz ainda mais para telas menores que 992px */
+  }
+}
+
+@media (max-width: 768px) {
+  .txt-animater {
+    font-size: 2rem; /* Reduz o tamanho da fonte para telas menores que 768px */
+    margin-top: 2rem; /* Ajusta a margem para telas menores */
+  }
+}
+
+@media (max-width: 576px) {
+  .txt-animater {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte para telas menores que 576px */
+    margin-top: 1rem; /* Ajusta a margem para telas menores */
+  }
+}
+
+
+/* final do estilo para texto que escreve sozinho*/
+
+/* estilos para a galeria rotativa
+*/
+
