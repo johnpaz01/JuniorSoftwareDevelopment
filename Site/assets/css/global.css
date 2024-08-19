@@ -3,6 +3,39 @@
     box-sizing: border-box;
 }
 
+.img-news {
+  width: 4rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+}
+
+.img-news img {
+  width: 10rem;
+  height: auto; /* Certifique-se de que a altura esteja com a unidade correta */
+  object-fit: cover; /* Para ajustar a imagem conforme necessário */
+}
+
+.text-init{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 75%;
+  text-align: center;
+  margin-left: 13%
+}
+.text-init p{
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
 .title {
     width: 226px;
     height: 53px;
@@ -88,6 +121,7 @@ a{
 
 /* General Navbar Styling */
 .navbar {
+  z-index: 10;
   display: flex; /* Makes navbar items display horizontally */
   justify-content: space-between; /* Spreads items evenly */
   align-items: center; /* Aligns items vertically in center */
@@ -415,3 +449,88 @@ position: relative;
 /* estilos para a galeria rotativa
 */
 
+#slide-all {
+  margin-top: 3rem;
+  position: relative;
+  z-index: -1;
+}
+
+/* Responsividade do contêiner do slider */
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1rem; /* Adiciona um pequeno padding para garantir que as bordas não encostem */
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+
+  /* Esconde a barra de rolagem */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.slider img {
+  flex: 1 0 100%;
+  object-fit: cover; /* Garante que as imagens se ajustem ao contêiner */
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Navegação do slider */
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute; /* Torna o posicionamento mais preciso */
+  bottom: 1.25rem;
+  left: 50%; /* Centraliza o elemento no contêiner */
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+  .slider-wrapper {
+    max-width: 100%;
+    padding: 0; /* Remove o padding em telas menores */
+  }
+
+  .slider-nav {
+    bottom: 0.75rem; /* Ajusta a posição da navegação em telas menores */
+  }
+
+  .slider img {
+    border-radius: 0.25rem; /* Reduz o arredondamento em telas menores para uma aparência mais limpa */
+  }
+}
+
+/* Garante que o slider esteja sempre abaixo de outros elementos */
+#slide-all {
+  position: relative;
+  z-index: 0; /* Define a posição do slider atrás de outros elementos com z-index superior */
+}
