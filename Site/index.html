@@ -12,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 
 <body>
 <img class="title" src="img/FundoFinal.svg" alt="Título JSD"/>
@@ -71,13 +74,7 @@
 <div class="text-init">
 
 <p class="textjustify">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod,
-   nunc ac tempor sollicitudin, nisi nulla gravida lectus, eget vestibulum enim neque
- at risus. Nam varius dictum eros, vel bibendum ligula feugiat nec. Nulla facilisi.
-  Ut aliquet, nisl a pharetra volutpat, leo turpis viverra sapien, eget lacinia dolor
-     urna a sapien. Donec convallis mi et urna efficitur bibendum. Maecenas sed arcu sed tortor convallis porttitor.
-Vestibulum vitae dui in ligula volutpat ullamcorper. Integer venenatis, turpis at tincidunt pellentesque, leo lectus malesuada purus, at efficitur felis metus vel neque.
-
+Texto para teste de site escrito por flavio e john, Texto para teste de site escrito por flavio e john, Texto para teste de site escrito por flavio e john, Texto para teste de site escrito por flavio e john , Texto para teste de site escrito por flavio e john Texto para teste de site escrito por flavio e john, Texto para teste de site escrito por flavio e john
 </p>
 
 </div>
@@ -85,26 +82,31 @@ Vestibulum vitae dui in ligula volutpat ullamcorper. Integer venenatis, turpis a
 
 
 <section id="slide-all">
+  <div class="slider-wrapper">
+      <div class="slider">
+          <input type="radio" name="slider" id="slide-1" checked>
+          <input type="radio" name="slider" id="slide-2">
+          <input type="radio" name="slider" id="slide-3">
 
-<div class="slider-wrapper">
+          <div class="slides">
+              <div class="slide">
+                  <img src="img/imgSliders/slider1.jpg" alt="Comerciante1">
+              </div>
+              <div class="slide">
+                  <img src="img/imgSliders/slider2.jpg" alt="Comerciante2">
+              </div>
+              <div class="slide">
+                  <img src="img/imgSliders/slider3.jpg" alt="Comerciante3">
+              </div>
+          </div>
 
-  <div class="slider">
-
-<img id="slide-1" src="img/imgSliders/slider1.jpg"  alt="Comerciante1">
-<img id="slide-2" src="img/imgSliders/slider2.jpg"  alt="Comerciante2">
-<img id="slide-3" src="img/imgSliders/slider3.jpg"  alt="Comerciante3">
-
+          <div class="slider-nav">
+              <label for="slide-1"></label>
+              <label for="slide-2"></label>
+              <label for="slide-3"></label>
+          </div>
+      </div>
   </div>
-
-  <div class="slider-nav">
-<a href="#slide-1"></a>
-<a href="#slide-2"></a>
-<a href="#slide-3"></a>
-
-
-  </div>
-</div>
-
 </section>
 
 <!-- inicio texto animado-->
@@ -158,9 +160,18 @@ Inicio na parte dos card's
       <div class="card-pessoal">
         <img src="img/Foto Flávio Filho.jpg" alt="Imagem de Flavio" class="photo">
         <h2 class="textcenter">Flávio Mesquita</h2>
-        <p class="textjustify">Desenvolvedor C# (.NET) focado no Back-End, criação de WebApi, e Mobile com .NET MAUI Desenvolvedor C# (.NET) focado no Back-End, criação de WebApi, e Mobile com .NET MAUI Desenvolvedor C# (.NET) focado no Back-End, criação de WebApi, e Mobile com .NET MAUI Desenvolvedor C# (.NET) focado no Back-End, criação de WebApi, e Mobile com .NET MAUI Desenvolvedor C# (.NET) focado no Back-End, criação de WebApi, e Mobile com .NET MAUI</p>
-        <button class="button">Saiba mais</button>
-      </div>
+        <div class="textcenter">
+            <a href="#" class="icone">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="icone">
+              <i class="fa-brands fa-square-instagram"></i>            
+            </a>
+            <a href="#" class="icone">
+              <i class="fa-brands fa-square-github" ></i>
+            </a>
+        </div>
+    </div>
     </p>
   </li>
   <li>
@@ -168,13 +179,56 @@ Inicio na parte dos card's
       <div class="card-pessoal">
         <img src="img/john.png" alt="Imagem de John" class="photo">
         <h2 class="textcenter">John Victor</h2>
-        <p class="textjustify">Desenvolvedor Java focado no Back-End, criação de WebApi, e apps Desktop Desenvolvedor Java focado no Back-End, criação de WebApi, e apps Desktop Desenvolvedor Java focado no Back-End, criação de WebApi, e apps Desktop Desenvolvedor Java focado no Back-End, criação de WebApi, e apps Desktop Desenvolvedor Java focado no Back-End, criação de WebApi, e apps Desktop</p>
-        <button class="button">Saiba mais</button>
+        <div class="iconcenter">
+          <a href="#2" class="icone">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#" class="icone">
+            <i class="fa-brands fa-square-instagram"></i>            
+          </a>
+          <a href="#75" class="icone">
+            <i class="fa-brands fa-square-github" ></i>
+          </a>
+      </div>
       </div>
     </p>
   </li>
 
 </ul>
+
+<ul class="cardscenter">
+  <li>
+    <div class="cardlinguagens">
+      <img src="img/imgCards/java.png" class="photocard">
+      <h3 class="textjustify">Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.</h3>
+    </div>
+  </li>
+  <li>
+    <div class="cardlinguagens">
+      <img src="img/imgCards/python.png" class="photocard">
+      <h3 class="textjustify">Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.</h3>
+    </div>
+  </li>
+  <li>
+    <div class="cardlinguagens">
+      <img src="img/imgCards/javascript.png" class="photocard">
+      <h3 class="textjustify">Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.</h3>
+    </div>
+  </li>
+  <li>
+    <div class="cardlinguagens">
+      <img src="img/imgCards/csharp.png" class="photocard">
+      <h3 class="textjustify">Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.</h3>
+    </div>
+  </li>
+  <li>
+    <div class="cardlinguagens">
+      <img src="img/imgCards/php.png" class="photocard">
+      <h3 class="textjustify">Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.</h3>
+    </div>
+  </li>
+</ul>
+
 <div>
     <footer class="footer">
         <p class="textwhite">
