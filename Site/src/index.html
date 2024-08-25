@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JSD - Junior Software Development</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="imagex/png" href="../img/JSD.png" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css" />
+    <!-- CSS de Suporte -->
+    <link rel="stylesheet" href="settings.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-b from-gray-950 via-slate-900 to-gray-950 text-white font-Roboto m-auto p-0"
+  >
+    <!-- NavBar -->
+    <nav class="bg-gray-950 w-auto h-auto sticky top-0 z-50">
+      <div class="max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-sm p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex justify-center items-center">
+              <h2 class="font-black">JSD</h2>
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <button
+                  onclick="scrollToSection('section-portifolio')"
+                  class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page"
+                >
+                  Portfólio
+                </button>
+                <button
+                  onclick="scrollToSection('section-social')"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Linguagens
+                </button>
+                <button
+                  onclick="scrollToSection('section-linguagens')"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Social
+                </button>
+                <button
+                  onclick="scrollToSection('section-contato')"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Contato
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Portifolio</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Linguagens</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Social</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Contato</a
+          >
+        </div>
+      </div>
+    </nav>
+    <img
+      id="section-portifolio"
+      class="lg:w-full h-48"
+      src="../img/FundoFinal.svg"
+      alt="Título JSD"
+    />
+    <!-- Carrosel de Imagens -->
+    <div class="w-full max-w-3xl mx-auto relative mt-8">
+      <div class="relative overflow-hidden h-96">
+        <!-- Imagens do Carrossel -->
+        <div class="carousel flex">
+          <div
+            class="carousel-item absolute w-full h-96 bg-cover bg-center transition-transform duration-500 ease-in-out transform translate-x-0"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="../img/imgSliders/slider1.jpg"
+              alt="Projeto 1"
+            />
+          </div>
+          <div
+            class="carousel-item absolute w-full h-96 bg-cover bg-center transition-transform duration-500 ease-in-out transform translate-x-full"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="../img/imgSliders/slider2.jpg"
+              alt="Projeto 2"
+            />
+          </div>
+          <div
+            class="carousel-item absolute w-full h-96 bg-cover bg-center transition-transform duration-500 ease-in-out transform translate-x-full"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="../img/imgSliders/slider3.jpg"
+              alt="Projeto 3"
+            />
+          </div>
+        </div>
+        <!-- Botões de Navegação -->
+        <button
+          id="prev"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 p-2 ring-2 ring-gray-200 text-white rounded-full hover:bg-blue-600/10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <img src="../img/icons/arrow-left.svg" alt="" />
+        </button>
+        <button
+          id="next"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 mr-4 p-2 ring-2 ring-gray-200 text-white rounded-full hover:bg-blue-600/10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <img src="../img/icons/arrow-right.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <main class="w-auto m-auto mt-12">
+      <!-- Cards Principais -->
+      <div
+        class="mb-12 p-4 flex flex-col justify-center items-center gap-4 lg:flex-row lg:px-4 lg:py-8"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-gray-900 shadow-sm w-80 h-64 p-4 rounded-xl flex flex-col justify-center items-center gap-4 ring-1 ring-blue-700/25 hover:ring-blue-700/75 transition ease-in-out delay-75 sm:mx-2 md:mx-4"
+        >
+          <img
+            src="../img/Cards/building.svg"
+            alt="Icone Empresa"
+            class="size-28 bg-gray-800 p-4 rounded-xl"
+          />
+          <h2 class="text-xl font-bold">Para quem?</h2>
+          <p class="text-gray-400 text-center text-semibold">
+            Lojas, Restaurantes, Bares, Hoteis e Microoempreendedores.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="bg-gray-900 shadow-sm w-80 h-64 p-4 rounded-xl flex flex-col justify-center items-center gap-4 ring-1 ring-blue-700/25 hover:ring-blue-700/75 transition ease-in-out delay-75 sm:mx-2 md:mx-4"
+        >
+          <img
+            src="../img/Cards/tablet-smartphone.svg"
+            alt="Icone Empresa"
+            class="size-28 bg-gray-800 p-4 rounded-xl"
+          />
+          <h2 class="text-xl font-bold">Tudo online?</h2>
+          <p class="text-gray-400 text-center text-semibold">
+            Você pode utilizar varios dispositivos para um mesmo fim.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-gray-900 shadow-sm w-80 h-64 p-4 rounded-xl flex flex-col justify-center items-center gap-4 ring-1 ring-blue-700/25 hover:ring-blue-700/75 transition ease-in-out delay-75 sm:mx-2 md:mx-4"
+        >
+          <img
+            src="../img/Cards/person-standing.svg"
+            alt="Icone Empresa"
+            class="size-28 bg-gray-800 p-4 rounded-xl"
+          />
+          <h2 class="text-xl font-bold">Complicou?</h2>
+          <p class="text-gray-400 text-semibold">
+            Oferecemos softwares de simples uso!
+          </p>
+        </div>
+      </div>
+      <!-- Cards de Linguagens de Programação -->
+      <div
+        id="section-linguagens"
+        class="w-auto h-auto p-1 m-1 rounded-xl lg:p-4 m-4"
+      >
+        <h2 class="flex items-center justify-center font-bold text-4xl">
+          Linguagens
+        </h2>
+        <div
+          class="w-auto font-Roboto grid grid-cols-1 justify-center items-center gap-8 lg:grid-cols-4 m-12 gap-12"
+        >
+          <div
+            class="relative flex flex-col w-72 h-28 p-2 bg-[#29292c] rounded-xl overflow-hidden isolate"
+          >
+            <div
+              class="absolute inset-[1px] bg-gray-900 rounded-[0.9375rem] z-20"
+            ></div>
+            <div
+              class="absolute w-1 inset-y-[0.65rem] left-[0.5rem] bg-gradient-to-b from-[#2eadff] via-[#3d83ff] to-[#7e61ff] rounded-[0.125rem] transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-1.5"
+            ></div>
+            <div
+              class="text-[#32a6ff] px-5 py-2.5 font-medium text-xl z-30 transition-transform duration-300 ease-in-out transform group-hover:translate-x-1.5"
+            >
+              C
+            </div>
+            <div
+              class="text-[#99999d] px-5 transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-2.5"
+            >
+              Sistemas operacionais • Softwares embarcados
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col w-72 h-28 p-2 bg-[#29292c] rounded-xl overflow-hidden isolate"
+          >
+            <div
+              class="absolute inset-[1px] bg-gray-900 rounded-[0.9375rem] z-20"
+            ></div>
+            <div
+              class="absolute w-1 inset-y-[0.65rem] left-[0.5rem] bg-gradient-to-b from-[#ee7818] via-[#e7ac08] to-[#d46a13] rounded-[0.125rem] transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-1.5"
+            ></div>
+            <div
+              class="text-[#32a6ff] px-5 py-2.5 font-medium text-xl z-30 transition-transform duration-300 ease-in-out transform group-hover:translate-x-1.5"
+            >
+              Java
+            </div>
+            <div
+              class="text-[#99999d] px-5 transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-2.5"
+            >
+              Corporativo • API • Jogos • Sistemas Robustos
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col w-72 h-28 p-2 bg-[#29292c] rounded-xl overflow-hidden isolate"
+          >
+            <div
+              class="absolute inset-[1px] bg-gray-900 rounded-[0.9375rem] z-20"
+            ></div>
+            <div
+              class="absolute w-1 inset-y-[0.65rem] left-[0.5rem] bg-gradient-to-b from-[#a8e063] via-[#56ab2f] to-[#2c6e49] rounded-[0.125rem] transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-1.5"
+            ></div>
+            <div
+              class="text-[#32a6ff] px-5 py-2.5 font-medium text-xl z-30 transition-transform duration-300 ease-in-out transform group-hover:translate-x-1.5"
+            >
+              Python
+            </div>
+            <div
+              class="text-[#99999d] px-5 transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-2.5"
+            >
+              Ciência de dados • Desenvolvimento web
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col w-72 h-auto p-2 bg-[#29292c] rounded-xl overflow-hidden isolate"
+          >
+            <div
+              class="absolute inset-[1px] bg-gray-900 rounded-[0.9375rem] z-20"
+            ></div>
+            <div
+              class="absolute w-1 inset-y-[0.65rem] left-[0.5rem] bg-gradient-to-b from-[#f7e018] via-[#f4c20d] to-[#e5a00d] rounded-[0.125rem] transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-1.5"
+            ></div>
+            <div
+              class="text-[#32a6ff] px-5 py-2.5 font-medium text-xl z-30 transition-transform duration-300 ease-in-out transform group-hover:translate-x-1.5"
+            >
+              Javascript
+            </div>
+            <div
+              class="text-[#99999d] px-5 transition-transform duration-300 ease-in-out transform z-30 group-hover:translate-x-2.5"
+            >
+              Desenvolvimento Web • API • Jogos
+            </div>
+          </div>
+        </div>
+        <!-- Cards dos integrantes -->
+        <h2
+          id="section-social"
+          class="flex items-center justify-center font-bold text-4xl"
+        >
+          Conheça a Equipe
+        </h2>
+        <div
+          class="w-auto font-Roboto mx-auto my-14 justify-center items-center flex flex-col gap-3 sm:mx-2 md:mx-4 lg:flex-row lg:px-4 lg:py-8"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-gray-900 shadow-sm w-96 h-auto p-4 rounded-xl flex flex-col justify-center items-center gap-4 hover:ring-2 ring-blue-700 transition ease-in-out delay-75"
+          >
+            <img
+              src="../img/Contributors/flavio-filho.jpg"
+              alt="Icone Empresa"
+              class="size-28 rounded-full"
+            />
+            <h2 class="text-xl font-bold">Flávio Mesquita</h2>
+            <p class="text-gray-400 text-center text-semibold">
+              Desenvolvedor .NET Back-End
+            </p>
+            <div class="flex flex-row justify-center items-center gap-2">
+              <span
+                ><a href="https://github.com/flaviofilho001"
+                  ><img
+                    class="size-6"
+                    src="../img/icons/github-mark-white.svg"
+                    alt="Github Link" /></a
+              ></span>
+              <span
+                ><a href="#"
+                  ><img
+                    class="size-6"
+                    src="../img/icons/linkedin-mark-white.svg"
+                    alt="Github Link" /></a
+              ></span>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-gray-900 shadow-sm w-96 h-auto p-4 rounded-xl flex flex-col justify-center items-center gap-4 hover:ring-2 ring-blue-700 transition ease-in-out delay-75"
+          >
+            <img
+              src="../img/Contributors/john.png"
+              alt="Icone Empresa"
+              class="size-28 rounded-full"
+            />
+            <h2 class="text-xl font-bold">John Victor</h2>
+            <p class="text-gray-400 text-center text-semibold">
+              Desenvolvedor Full-Stack
+            </p>
+            <div class="flex flex-row justify-center items-center gap-2">
+              <span
+                ><a href="https://github.com/johnpaz01"
+                  ><img
+                    class="size-6"
+                    src="../img/icons/github-mark-white.svg"
+                    alt="Github Link" /></a
+              ></span>
+              <span
+                ><a
+                  href="https://www.linkedin.com/in/john-victor-de-olivera-atanazio/"
+                  ><img
+                    class="size-6"
+                    src="../img/icons/linkedin-mark-white.svg"
+                    alt="Github Link" /></a
+              ></span>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-gray-900 shadow-sm w-96 h-auto p-4 rounded-xl flex flex-col justify-center items-center gap-4 hover:ring-2 ring-blue-700 transition ease-in-out delay-75"
+          >
+            <img
+              src="../img/Contributors/felipe-cvlc.jpeg"
+              alt="Icone Empresa"
+              class="size-28 rounded-full"
+            />
+            <h2 class="text-xl font-bold">Felipe Cavalcanti</h2>
+            <p class="text-gray-400 text-semibold">Engenheiro de Software</p>
+            <div class="flex flex-row justify-center items-center gap-2">
+              <span
+                ><a href="https://github.com/feapolina"
+                  ><img
+                    class="size-6"
+                    src="../img/icons/github-mark-white.svg"
+                    alt="Github Link" /></a
+              ></span>
+              <span
+                ><a
+                  href="https://www.linkedin.com/in/felipe-cavalcanti-39a88a253/"
+                  ><img
+                    class="size-6"
+                    src="../img/icons/linkedin-mark-white.svg"
+                    alt="Github Link" /></a
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contato -->
+      <section
+        class="bg-gray-900 m-6 rounded-xl ring-1 ring-blue-700/25 lg:m-12"
+      >
+        <div class="container px-6 py-12 mx-auto font-Roboto">
+          <div>
+            <p class="font-medium text-blue-500 dark:text-blue-400">Contatos</p>
+            <h1
+              class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white"
+            >
+              Fale Conosco
+            </h1>
+            <p class="mt-3 text-gray-500 dark:text-gray-400">
+              Você pode nos encontrar em:
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-3 lg:grid-cols-3"
+          >
+            <div>
+              <span
+                class="inline-block p-3 rounded-full bg-blue-100/80 dark:bg-gray-800"
+              >
+                <img src="../img/icons/mail.svg" alt="" />
+              </span>
+              <h2
+                class="mt-4 text-lg font-medium text-gray-800 dark:text-white"
+              >
+                Email
+              </h2>
+              <p class="mt-2 text-blue-500 dark:text-blue-400">
+                jsdevelopment@gmail.com
+              </p>
+            </div>
+            <div>
+              <span
+                class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800"
+              >
+                <img src="../img/icons/phone.svg" alt="" />
+              </span>
+              <h2
+                class="mt-4 text-lg font-medium text-gray-800 dark:text-white"
+              >
+                WhatsApp Business
+              </h2>
+              <p class="mt-2 text-gray-500 dark:text-gray-400">
+                Disponível das _ Até as _
+              </p>
+              <p class="mt-2 text-blue-500 dark:text-blue-400">
+                (83) x-xxxxxxxx
+              </p>
+            </div>
+            <div>
+              <span
+                class="inline-block p-3 rounded-full bg-blue-100/80 dark:bg-gray-800"
+              >
+                <img src="../img/icons/instagram.svg" alt="" />
+              </span>
+              <h2
+                class="mt-4 text-lg font-medium text-gray-800 dark:text-white"
+              >
+                Instagram
+              </h2>
+              <p class="mt-2 text-blue-500 dark:text-blue-400">
+                <a href="#">@jsdevelopment</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer
+      id="section-contato"
+      class="bg-gray-950 border-t-2 border-slate-700/30 w-auto mx-auto mt-12 h-24 p-14"
+    >
+      <div
+        class="w-full h-full flex flex-col justify-center items-center font-Roboto space-y-4 lg:space-y-1"
+      >
+        <div>
+          <h2 class="text-sm text-gray-400 lg:text-md">
+            @ JSD 2024 • Todos os direitos reservados
+          </h2>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-4">
+          <h2 class="text-sm text-gray-400 lg:text-md">
+            <a class="hover:text-gray-200" href="#">Termos de Serviço</a>
+          </h2>
+          <h2 class="text-sm text-gray-400 lg:text-md">
+            <a class="hover:text-gray-200" href="#">Política de Privacidade</a>
+          </h2>
+          <h2 class="text-sm text-gray-400 lg:text-md">
+            <a class="hover:text-gray-200" href="#">Quem somos</a>
+          </h2>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
